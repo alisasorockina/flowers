@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Цветочки</title>
+    <link rel="icon" href="img/favicon.ico" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <button class="menu-btn">
+            <i class="bx bx-menu"></i>
+          </button>
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="#we" class="menu-link">О нас</a>
+            </li>
+            <li class="menu-item">
+              <a href="#flower" class="menu-link">Букеты</a>
+            </li>
+            <li class="menu-item">
+              <a href="#zakaz" class="menu-link">Заказать</a>
+            </li>
+          </ul>
+          <a href="tel:89001112233" class="phone">89001112233</a>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="headline">
+        <div class="container">
+          <h1 class="title">Цветы для всех к 8 марта!</h1>
+          <img src="img/headline.jpg" alt="flower" class="headline-img" />
+          <a href="#flowers" class="headline-btn">ВЫБРАТЬ</a>
+        </div>
+      </section>
+      <section class="we">
+        <div class="container">
+          <h2 class="we-title" id="we">О НАС</h2>
+          <div class="we-info">
+            <div class="we-text">
+              <p>
+                У нас всегда свежие цветы и богатый выбор готовых букетов. Мы
+                доставляем цветы семь дней в неделю, работаем на рынке
+                Санкт-Петербурга уже неcколько лет и наши букеты по праву
+                снискали славу у покупателей. Сделав у нас заказ на цветы хотя
+                бы один раз, вы вернетесь к нам снова. Нас рекомендуют своим
+                друзьям.
+              </p>
+              <p>
+                Наш магазин работает ежедневно с 9 до 22 часов. Вы можете
+                заказать доставку дизайнерский букетов из живых цветов в
+                Санкт-Петербурге по любому адресу: на дом или в офис получателю.
+              </p>
+              <p>
+                Наша продукция соответствуют любому вашему настроению и поводу
+                их вручения: воздушные гортензии, экзотические орхидеи,
+                благородные каллы, нежные ромашки… И, конечно, какое женское
+                сердце устоит перед бархатом 101 розы?
+              </p>
+            </div>
+            <img class="we-img" src="img/we.jpg" alt="we" />
+          </div>
+        </div>
+      </section>
+      <section class="sliders">
+        <div class="container">
+          <h2 id="flower" class="we-title">ВЫБЕРИ СВОЙ БУКЕТ!</h2>
+          <div class="slider" id="slider">
+            <img src="./img/1.jpg" alt="Slide 01" />
+            <img src="./img/2.jpg" alt="Slide 02" />
+            <img src="./img/3.jpg" alt="Slide 03" />
+          </div>
+
+          <div class="controls">
+            <button id="btnPrev"><i class="bx bx-chevron-left"></i></button>
+            <button id="btnNext"><i class="bx bx-chevron-right"></i></button>
+          </div>
+        </div>
+      </section>
+      <section id="flowers" class="flowers">
+        <div class="container">
+          <h2 class="flowers-title">ЦВЕТЫ</h2>
+          <ul class="flowers-list">
+            <li class="flowers-item">
+              <img src="img/11.jpg" alt="Silver" />
+              <h3>Тюльпаны</h3>
+              <p>Вестники Весны!</p>
+            </li>
+            <li class="flowers-item">
+              <img src="img/22.jpg" alt="Deep Purple" />
+              <h3>Розы</h3>
+              <p>Роскошый Выбор!</p>
+            </li>
+            <li class="flowers-item">
+              <img src="img/33.jpg" alt="Gold" />
+              <h3>Ромашки</h3>
+              <p>Золотые глазки!</p>
+            </li>
+            <li class="flowers-item">
+              <img src="img/44.jpg" alt="Space Black" />
+              <h3>Альстромерии</h3>
+              <p>Небанальный Вариант!</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="container">
+          <div class="contacts-inner">
+            <form
+              id="zakaz"
+              name="contact_form"
+              class="contacts-form"
+              action="#"
+            >
+              <h2 class="contacts-title">ХОТИТЕ САМЫЙ КРАСИВЫЙ БУКЕТ?</h2>
+              <input
+                type="text"
+                class="contacts-input"
+                placeholder="Ваше Имя"
+              />
+              <input
+                name="contact_phone"
+                type="tel"
+                class="contacts-input"
+                placeholder="Номер Телефона"
+                required
+              />
+              <p>В ближайшее время наш менеджер свяжется с Вами</p>
+              <button id="open-modal-btn">ЗАКАЗАТЬ</button>
+            </form>
+            <img class="contacts-img" src="img/contacts.jpg" alt="iphone" />
+          </div>
+        </div>
+      </section>
+      <div class="modal" id="my-modal">
+        <div class="modal__box">
+          <button class="modal__close-btn" id="close-my-modal-btn">
+            <svg
+              width="23"
+              height="25"
+              viewBox="0 0 23 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+                fill="#333333"
+              />
+              <path
+                d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
+                fill="#333333"
+              />
+            </svg>
+          </button>
+          <h2 class="title-sub">Поздравляем!</h2>
+          <p class="subtitle-sub">Данные были отправлены!</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <a href="#" class="footer-link">Политика конфиденциальности</a>
+          <a href="tel:89001112233" class="phone">89001112233</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>
